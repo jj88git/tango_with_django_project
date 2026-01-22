@@ -3,11 +3,9 @@
 {% load static %} 
 
 <html>
-    
     <head>  
         <title>Rango</title>
     </head>
-
     <body>
         <h1>Rango says...</h1>
         <p>here is the about page.</p>
@@ -17,13 +15,10 @@
         </div>
         <div>
             <a href="{% url 'rango:index' %}">Index</a><br />
-            <img src="{% static 'images/rango.jpg' %}" 
-                alt="Picture of Rango" />
-            <img src="/static/images/rango.jpg" 
-                alt="Picture of Rango" />
 
+            <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
 
-            <img src="{{ MEDIA_URL }}cat.jpg"alt="Picture of a Cat."/>
+            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat" />
         </div>
     </body>
 </html>
