@@ -11,6 +11,8 @@ Homepage
     <strong>{{ boldmessage }}</strong><br />
 </div>
 
+<p>Visits: {{ visits }}</p>
+
 {% if user.is_authenticated %}
     <p>howdy {{ user.username }}!</p>
 {% endif %}
